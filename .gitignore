@@ -1,11 +1,11 @@
 .DS_STORE
 jarvis-config.sh
 
-jarvis-commands
+#jarvis-commands
 
 jarvis-record.flac
 
-jarvis-functions.sh
+#jarvis-functions.sh
 
 jarvis-record.wav
 
@@ -13,4 +13,4 @@ pocketsphinx-dictionary.dic
 
 pocketsphinx-languagemodel.lm
 
-jarvis-events
+#jarvis-events

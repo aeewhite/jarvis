@@ -1,0 +1,17 @@
+*JARVIS*==bypass=true; say "Yes sir?"
+Nevermind*|STOP|STOP LISTENING|*All for now*==bypass=false; say "Ok"
+*THANK*==false; say "My pleasure"
+*help*==cat jarvis-commands
+*NAME*== say "My name is $trigger"
+*BONJOUR*|*SALUT*==say "Bonjour $username"
+*GOOD BYE*|*BYE*==say "Goodbye $username"; exit
+*TEST*==say "Everything's working!"
+*VERSION*==say "Je suis en version 0.1"
+*repeat*==say "..."
+*QUELLE HEURE*==say "il est `date +%H:%M`"
+*QUEL JOUR*==say "nous sommes le `date +"%A %d %h %Y"`"
+*MEANING*LIFE*==say "42"
+*WHAT TIME*==say "It is `date +%H:%M`"
+START PANDORA*==say "Starting pandora"; pianobar &
+STOP PANDORA*== say "Stopping pandora"; echo "q" > ~/.config/pianobar/ctl; killall pianobar
+*DOG*==echo "..."
