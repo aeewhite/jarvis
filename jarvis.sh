@@ -165,7 +165,9 @@ while getopts ":$flags" o; do
 			while true; do
 				clear
 				read -p "Checking audio output, make sure your speakers are on and press [Enter]"
-				[ $play_hw ] && play_export="AUDIODEV=$play_hw AUDIODRIVER=alsa"
+				[ $play_hw ] && play_export="AUDIODEV=$play_hw AUDIODRIVER=coreaudio"
+				echo $play_export
+				echo $testaudiofile
 				eval "$play_export play $testaudiofile"
 				read -p "Did you hear something? (y)es (n)o or error (r)etry: " -n 1 -r
 				if [[ $REPLY =~ ^[Yy]$ ]]; then break; fi
